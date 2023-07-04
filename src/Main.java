@@ -90,9 +90,9 @@ public class Main {
 
     public static void task10() {
         System.out.println("Задача 10");
-        for (int i = 1; i <= 10; i++){
+        for (int i = 1; i <= 10; i++) {
             int a = 2;
-            int b= a * i;
+            int b = a * i;
             System.out.println(a + " * " + i + " =" + b);
         }
     }
