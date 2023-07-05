@@ -28,13 +28,10 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
-        for (int i = 0; i <= 17; i++) {
-            int a = (i + 2) % 2;
-            if (a == 0) {
+        for (int i = 0; i <= 17; i+=2) {
                 System.out.println(i);
             }
         }
-    }
 
     public static void task4() {
         System.out.println("Задача 4");
@@ -77,13 +74,10 @@ public class Main {
     public static void task9() {
         System.out.println("Задача 9");
         int contribution = 29000;
-        double total;
-        float withContributionPenny = contribution * 100;
-        float withTotalPenny = 0;
+        double total = 0;
+        double percent = 0.12;
         for (int i = 0; i < 12; i++) {
-            withTotalPenny = withTotalPenny + withTotalPenny / 100;
-            withTotalPenny = withTotalPenny + withContributionPenny;
-            total = withTotalPenny / 100;
+            total = total + total * percent + contribution;
             System.out.println("Месяц " + i + " , сумма накоплений равна " + total + "рублей.");
         }
     }
